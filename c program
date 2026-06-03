@@ -1,0 +1,192 @@
+#include<stdio.h>
+//define pi 3.14
+int main()
+{
+  int r;
+  const float pi=3.14;
+  float area;
+  scanf("%d",&r);
+  area=(pi*r*r);
+  printf("%.2f",area);
+  return 0;
+}
+
+Output:882026.06
+
+  ------------------------------------------
+
+#include<stdio.h>
+int main()
+{
+  int d;
+  d=10;
+  printf("Octal=%o\n",d);
+  printf("Hexa=%X",d);
+  return 0;
+}
+
+Output: Octal=12
+        Hexa=A
+--------------------------------------------
+
+  #include<stdio.h>
+int main()
+{
+  int d,h;
+  d=010;
+  h=0x10;
+  printf("Octal to Decimal =%d\n",d);
+  printf("Hexa to decimal=%d",h);
+  return 0;
+}
+Output: Octal to Decimal =8
+        Hexa to decimal=16
+---------------------------------------------
+
+#include<stdio.h>
+int main()
+{
+  char ch='a';
+  printf("character=%c\n",ch);
+  printf("ASCII Value=%d\n",ch);
+  printf("Uppercase=%c",ch-32);
+  return 0;
+}
+
+Output:character=a
+      ASCII Value=97
+      Uppercase=A
+-----------------------------------------------
+
+  #include<stdio.h>
+void main()
+{
+  int i=1;
+  while(i<=10)
+  {
+    printf("Hi\n");
+    i++;
+  }
+    printf("END");
+}
+
+Output:Hi
+       Hi
+       Hi
+       Hi
+       Hi
+       Hi
+       Hi
+       Hi
+       Hi
+       Hi
+      END
+---------------------------------------------------
+  #include<stdio.h>
+void main()
+{
+  int i=1;
+  while(i<=20)
+  {
+    printf("%d\n",i);
+    i++;
+  }
+    printf("END");
+  }
+
+Output:1
+       2
+       3
+       4
+       5
+       6
+       7
+       8
+       9
+       10
+       11
+       12
+       13
+       14
+       15
+       16
+       17
+       18
+       19
+       20
+       END
+  -------------------------------------------
+
+  #include<stdio.h>
+int main()
+{
+  int i=1;
+  while(i<=20)
+  {
+    if(i%2==0)
+    {
+      printf("%d\n",i);
+    }
+      i++;
+  }
+      return 0;
+}
+
+Output:2
+       4
+       6
+       8
+       10
+       12
+       14
+       16
+       18
+       20
+  -----------------------------------------------
+
+  #include<stdio.h>
+int main()
+{
+  int i=1, sum=0;
+  while(i<=10)
+  {
+    sum=sum+i;
+    i++;
+  }
+    printf("%d",sum);
+}
+
+Output:55
+  ---------------------------------------------
+
+  #include<stdio.h>
+int main()
+{
+  int i=1,fact=1;
+  while(i<=5)
+  {
+    fact=fact*i;
+    i++;
+  }
+    printf("%d",fact);
+}
+
+Output:120
+  ---------------------------------------------
+
+  #include <stdio.h>
+int main()
+{
+  int a = 0, b = 1, c, i = 1;
+  while(i <= 10)
+  {
+    c = a + b;
+    a = b;
+    b = c;
+    i++;      
+  }
+    printf("%d", c);
+    return 0;
+}
+
+Output:89
