@@ -1,16 +1,12 @@
-#include<stdio.h>
-//define pi 3.14
+#include <stdio.h>
 int main()
 {
-  int r;
-  const float pi=3.14;
-  float area;
-  scanf("%d",&r);
-  area=(pi*r*r);
-  printf("%.2f",area);
-  return 0;
+  int no = 7;
+    if(no % 2 == 0)
+        printf("Even Number");
+    else
+        printf("Odd Number");
+        return 0;
 }
-
----------------------------------------
-
-Output:882026.06
+------------------------------------
+Output:Odd Number
