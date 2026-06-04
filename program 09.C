@@ -1,26 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-  int i=1;
-  while(i<=20)
-  {
-    if(i%2==0)
+  int n = 10;
+  int a = 0, b = 1, c;
+  int i = 1, sum = 0;
+    while(i <= n)
     {
-      printf("%d\n",i);
+      if(a % 2 == 0)
+        sum = sum + a;
+        c = a + b;
+        a = b;
+        b = c;
+        i++;
     }
-      i++;
-  }
-      return 0;
+    printf("Even Fibonacci Sum = %d", sum);
+    return 0;
 }
---------------------------------------------
-Output:
-  2
-4
-6
-8
-10
-12
-14
-16
-18
-20
+-----------------------------------------------------
+Output: Even Fibonacci Serires-44
